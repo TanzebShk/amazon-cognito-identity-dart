@@ -4,6 +4,7 @@ export 'src/cognito_client_exceptions.dart';
 export 'src/cognito_credentials.dart';
 export 'src/cognito_id_token.dart';
 export 'src/cognito_identity_id.dart';
+export 'src/cognito_access_token.dart';
 export 'src/cognito_jwt_token.dart';
 export 'src/cognito_refresh_token.dart';
 export 'src/cognito_storage.dart';
