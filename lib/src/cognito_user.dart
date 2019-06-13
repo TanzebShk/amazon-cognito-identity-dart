@@ -275,6 +275,12 @@ class CognitoUser {
     return null;
   }
 
+  Future<void> setSignInUserSession(CognitoUserSession signInUserSession) async {
+    await this.clearCachedTokens();
+    this._signInUserSession = signInUserSession;
+    await this.cacheTokens();
+  }
+
   CognitoUserSession getSignInUserSession() {
     return _signInUserSession;
   }
